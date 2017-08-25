@@ -89,5 +89,5 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://zbhgit.github.io/react-news/build"
+  "homepage": "http://www.zhangbinhe.com/react-news"
 }

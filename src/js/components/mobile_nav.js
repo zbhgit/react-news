@@ -8,7 +8,12 @@ import MobileList from './mobile_list';
 const TabPane = Tabs.TabPane;
 
 export default class MobileNav extends React.Component {
-
+	constructor(props) {
+		super(props);
+		this.state = {
+      mode: 'top',
+    };
+	}
 	render() {
 		const settings = {
 			dots: true,
@@ -17,16 +22,20 @@ export default class MobileNav extends React.Component {
 			autoplay: true,
 			slideToshow: 1
 		};
+		const mode = this.state.mode
 		return (
 			<div>
-				<Tabs>
+				<Tabs
+					defaultActiveKey="1"
+          tabPosition={mode}
+				>
 					<TabPane tab="头条" key="1">
-						<Carousel {...settings}>
+						 <Carousel {...settings}>
 							<div><img src="images/carousel_1.jpg" alt=""/></div>
 							<div><img src="images/carousel_2.jpg" alt=""/></div>
 							<div><img src="images/carousel_3.jpg" alt=""/></div>
 							<div><img src="images/carousel_4.jpg" alt=""/></div>
-						</Carousel>
+						</Carousel> 
 						<MobileList type="top" count="20"></MobileList>
 					</TabPane>
 					<TabPane tab="社会" key="2">

@@ -1,5 +1,6 @@
 html {
     font-size: 50px;
+    width: 100%;
 }
 
 #mobileheader {
@@ -39,7 +40,10 @@ html {
     height: 220px;
     width: 100%;
 }
-
+#mobileDetailsContainer {
+    width:100%;
+    overflow: hidden
+}
 #mobileDetailsContainer .title, .article-title .title {
     font-size: 0.44rem !important;
     line-height: 1.4em
@@ -138,12 +142,6 @@ section {
     height: .4rem;
     line-height: .4rem;
     opacity: .9
-}
-.m_article .m_article_img:before {
-        content: '';
-      display: inline-block;
-      height: 100%;
-      vertical-align: middle;
 }
 
 .m_article .m_article_img img {
