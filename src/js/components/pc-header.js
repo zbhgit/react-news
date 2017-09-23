@@ -130,7 +130,7 @@ class PCHeader extends React.Component {
 					<Col span={20}>
 						<Menu mode="horizontal" selectedKeys={[this.state.current]} onClick={this.handleClick}>
 						<Menu.Item>
-						<a href="/" className="logo">
+						<a href="/react-news" className="logo">
 							<img src="images/logo.png" alt="logo"/>
 							<span>News</span>
 						</a>

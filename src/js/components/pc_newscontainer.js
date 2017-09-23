@@ -55,8 +55,8 @@ export default class PCNewsContainer extends React.Component {
 							</TabPane>						
 						</Tabs>
 						<div>
-							<PCNewsImagewrap count={8} width="100%" type="guonei" cardTitle="国内新闻" imageWidth="113px"/>
-							<PCNewsImagewrap count={16} width="100%"  type="yule" cardTitle="娱乐" imageWidth="113px"/>
+							<PCNewsImagewrap count={8} width="1050px" type="guonei" cardTitle="国内新闻" imageWidth="113px"/>
+							<PCNewsImagewrap count={16} width="1050px"  type="yule" cardTitle="娱乐" imageWidth="113px"/>
 						</div>
 					</Col>
 					<Col span={2}></Col>

@@ -108,7 +108,7 @@ class MobileHeader extends React.Component {
 		return (
 			<div id="mobileheader">
 				<header>
-					<a href="/">
+					<a href="/react-news">
 						<img src="images/logo.png" alt="logo"/>
 						<span>News</span>
 					</a>

@@ -7,7 +7,9 @@
     display: block;
     clear: both;
 }
-
+body,html {
+    width: 1260px !important;
+}
 .logo {
     align-items: center;
     display: flex;
@@ -80,6 +82,7 @@
     margin-bottom: 10px;
 }
 
+
 .topNewsList a {
     line-height: 22px !important;
     color: #666 !important;
@@ -145,7 +148,7 @@
 
 .imageblock {
     /* float: left; */
-    padding: 10px 5px;
+    padding: 10px 7px;
 }
 
 .custom-image {
