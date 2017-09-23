@@ -48,9 +48,9 @@ export default class PCNewsDetails extends React.Component {
 						<Comments uniquekey={this.props.params.uniquekey}></Comments>
 					</Col>
 					<Col span={6}>
-						<PCNewsImageBlock count={40} type="top" width="100%" cardTitle="相关新闻" imageWidth="15opx"></PCNewsImageBlock>
+						<PCNewsImageBlock count={40} type="top" width="400px" cardTitle="相关新闻" imageWidth="110px"></PCNewsImageBlock>
 					</Col>
-					<Col span={2}/>
+					<Col span={2} />
 				</Row>
 				<BackTop></BackTop>
 				<PCFooter></PCFooter>

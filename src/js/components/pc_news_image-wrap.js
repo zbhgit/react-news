@@ -33,9 +33,8 @@ export default class PCNewsImageBlock extends React.Component {
 			width: this.props.imageWidth,
 			height: "90px"
 		};
-		const width = parseInt(this.props.width,10)- parseInt(this.props.imageWidth,10) - 100 + 'px'
 		const styleH3 = {
-			maxWidth: width,
+			maxWidth: this.props.imageWidth,
 			whiteSpace: "nowrap",
 			overflow: "hidden",
 			textOverflow: "ellipsis"
@@ -44,10 +43,10 @@ export default class PCNewsImageBlock extends React.Component {
 			news.map((newsItem, index) => (
 				<div key={index} className="imageblock">
 					<Link to={`details/${newsItem.uniquekey}`} >
-						<div className="custom-image">
+						<div className="custom-image2">
 							<img src={newsItem.thumbnail_pic_s} alt="" title={newsItem.title} style={styleImage}/>
 						</div>
-						<div className="custom-card">
+						<div className="custom-card2">
 							<h3 style={styleH3}>{newsItem.title}</h3>
 							<p>{newsItem.author_name}</p>
 						</div>
